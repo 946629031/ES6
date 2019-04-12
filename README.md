@@ -2,6 +2,8 @@
 
 ES6 各种新语法 入门了解  石川blue讲解
 
+本 README.md 转自 [链接](https://github.com/able8/hello-es6)
+
 视频地址
 
 - [b站：深入解读ES6系列](https://www.bilibili.com/video/av20327829/)
@@ -665,6 +667,3 @@ async function show() {
     console.log(2)
 }
 ```
-
-
-本 README.md 转自 [链接](https://github.com/able8/hello-es6)
