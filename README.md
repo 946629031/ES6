@@ -665,3 +665,6 @@ async function show() {
     console.log(2)
 }
 ```
+
+
+本 README.md 转自 [链接](https://github.com/able8/hello-es6)
