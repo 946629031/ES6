@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+<script>
+    let p = new Promise(function(resolve, reject){
+        $.ajax({
+            url: './arr.txt',
+            dataType: 'json',
+            success(arr){
+                resolve(arr)
+            },
+            error(err){
+                reject(err)
+            }
+        })
+    })
+
+    p.then(function(arr){
+        alert('成功了'+arr)
+    }, function(err){
+        alert('失败了'+err)
+        console.log(err);
+        
+    })
+
+
+
+</script>
