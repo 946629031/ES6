@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面向对象 React</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.js"></script>
+</head>
+<body>
+
+
+    <script type="text/babel">
+        class Item extends React.Component{
+            constructor(...args){
+                super(...args)
+            }
+
+            render(){
+                return <li>{this.props.str}</li>
+            }
+        }
+
+        class List extends React.Component{
+            constructor(...args){
+                super(...args)
+            }
+
+            render(){
+                return <ul>{this.props.arr.map(a=><Item str={a}></Item>)}</ul>      // 通过数组映射，简化以下写法
+            }
+
+            // render(){
+            //     let aItem = [];
+            //     for(let i=0; i<this.props.arr.length; i++){
+            //         aItem.push(<Item str={this.props.arr[i]}></Item>)
+            //     }
+
+            //     return <ul>{aItem}</ul>
+            // }
+        }
+
+
+        window.onload = function () {
+            let oDiv = document.getElementById('div1');
+
+            ReactDOM.render(
+                <List arr={['hello React World','hello Vue','Angular','123']}></List>,
+                oDiv
+            )
+        }
+        
+    
+    </script>
+
+    <div id="div1">
+
+    </div>
+
+    
+</body>
+</html>

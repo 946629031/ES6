@@ -1,0 +1,25 @@
+<script>
+
+    
+    function f1() {
+        var a = 999;
+
+        function f2() {
+            console.log(a);
+        }
+        return f2; // f1返回了f2的引用
+    }
+    var result = f1(); // result就是f2函数了
+    result(); // 执行result，全局作用域下没有a的定义，
+    //但是函数闭包，能够把定义函数的时候的作用域一起记住，输出999
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -44,10 +44,10 @@ ajax('/banners', function(banner_data){
 
 2. 我们再来看看同步请求的方式
 ```js
-let banner_data = ajax_async('/banners');
-let hotItem_data = ajax_async('/hotItems');
-let slide_data = ajax_async('/slides');
-let banner_data = ajax_async('/banners');
+let banner_data = ajax_sync('/banners');
+let hotItem_data = ajax_sync('/hotItems');
+let slide_data = ajax_sync('/slides');
+let banner_data = ajax_sync('/banners');
 ```
 由此可见，同步方式虽然体验不好，容易卡页面，但是它的代码确实更加的简单
 

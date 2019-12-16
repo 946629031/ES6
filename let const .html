@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 原生js
+        // window.onload = function(){
+        //     var abtn = document.getElementsByTagName('input');
+            
+        //     for(var i=0; i<abtn.length; i++ ){
+        //         abtn[i].onclick = function(){
+        //             alert(i)
+        //         }
+        //     }
+        // }
+
+        // 闭包
+        // window.onload = function(){
+        //     var abtn = document.getElementsByTagName('input');
+            
+        //     for(var i=0; i<abtn.length; i++ ){
+        //         (function(i){
+        //             abtn[i].onclick = function(){
+        //                 alert(i)
+        //             }
+        //         })(i);
+        //     }
+        // }
+
+        // ES6 let 方法
+        window.onload = function(){
+            var abtn = document.getElementsByTagName('input');
+            
+            for(let i=0; i<abtn.length; i++ ){
+                abtn[i].onclick = function(){
+                    alert(i)
+                }
+            }
+        }
+    </script>
+
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮2">
+    <input type="button" value="按钮3">
+    
+</body>
+</html>

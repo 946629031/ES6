@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 在老版中，"类" 跟 "构造函数" 其实是一个东西
+        function User(name, pass){
+            this.name     = name
+            this.pass = pass
+        }
+
+        User.prototype.showName = function(){
+            console.log(this.name)
+        }
+
+        User.prototype.showPass = function(){
+            console.log(this.pass)
+        }
+
+        var Tony = new User('bule','123456')
+
+        Tony.showName()
+        Tony.showPass()
+
+
+
+        // ------------------ 分割线 -------------------------
+
+        // ES6的面向对象
+        // 1.class关键字、构造器和类分开了
+        // 2.class里面直接加方法
+
+
+        // ES6中 "类"的定义
+        class Staff{
+            constructor(name, pass){
+                this.name = name
+                this.pass = pass
+            }
+
+            showName(){
+                console.log(this.name)
+            }
+            showPass(){
+                console.log(this.pass);
+            }
+        }
+
+        let Tom = new Staff('tom','333666');
+        Tom.showName()
+        Tom.showPass()
+
+
+        // ------------------ 分割线 -------------------------
+
+        // ES6以前的 继承写法
+        function VipUser(name,pass,level){
+            User.call(this, name, pass)     // call()继承了 原本属于User的属性和方法
+
+            this.level = level
+        }
+
+        VipUser.prototype = new User()
+        VipUser.prototype.constructor = VipUser
+
+        VipUser.prototype.showLevel = function(){
+            console.log(this.level)
+        }
+
+        let Lory = new VipUser('Lory','123123','5')
+        Lory.showName()
+        Lory.showPass()
+        Lory.showLevel()
+
+
+        // ------------------ 分割线 -------------------------
+
+        // ES6 的继承方法
+        class seniorStaff extends Staff{
+            constructor(name, pass, title){
+                super(name,pass)     // super -- 超类==父类
+
+                this.title = title
+            }
+
+            showTitle(){
+                console.log(this.title);
+            }
+        }
+
+        let Jony = new seniorStaff('Jony','999','CTO')
+        Jony.showName()
+        Jony.showPass()
+        Jony.showTitle()
+
+
+
+    </script>
+    
+</body>
+</html>

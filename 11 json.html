@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            1. JSON对象
+               JSON.stringify
+               JSON.parse
+        
+            2. 简写
+               key跟value       留一个就行
+               方法             : function  一块删
+                  show: function(){...}
+                  show(){...}
+
+
+        */
+
+
+        // ------------------ 分割线 -------------------------
+
+        let json = {a:5, b:6}
+        let str = 'https://it.kaikeba.com/path/user?data=' + json     // 此处会解析成 ?data=[object Object]
+        let str1 = 'https://it.kaikeba.com/path/user?data=' + encodeURIComponent(JSON.stringify(json))      // 把字符串作为 URI 组件进行编码
+        
+        console.log(str1)
+
+
+        // ------------------ 分割线 -------------------------
+
+        // let string = "{a:4, b:12, c:'123'}"     // 错误写法
+        // let jsonX = JSON.parse(string)
+
+        // JSON的标准写法
+        // 1.只能用双引号
+        // 2.所有 key 必须用双引号包起来
+
+        
+        let string2 = '{"a":4, "b":12, "c":"123"}'
+        let jsonX2 = JSON.parse(string2)
+
+        console.log(jsonX2)
+        
+        // ------------------ 分割线 -------------------------
+
+        // 简写
+        let a = 12;
+        let b = 5;
+        
+        // ES6以前非简写
+        // let ajson = {
+        //     a:a,
+        //     b:b,
+        //     c:'123',
+        //     show: function(){
+        //         console.log(this.c)
+        //     }
+        // }
+
+        // ES6中的 JSON简写
+        let ajson = {
+            a,
+            b,
+            c:'123',
+            show(){
+                console.log(this.c)
+            }
+        }
+        console.log(ajson);
+        ajson.show()
+        
+
+    </script>
+
+</body>
+</html>
