@@ -456,6 +456,7 @@ console.log({ a, b, show(){ console.log('a') }})
 ```
 
 ## 12.Promise
+- 参考文章 [Promises 是什么？](https://github.com/946629031/Node.js-Koa2-the-movie-trailer-site/#1-3-%E6%AF%AB%E4%B8%8D%E7%8A%B9%E8%B1%AB%E7%9A%84%E4%BD%BF%E7%94%A8promise)
 
 - 异步和同步
     - 异步，操作之间没有关系，同时执行多个操作， 代码复杂
@@ -716,6 +717,7 @@ Promise.race([
 
 
 ## 13.generator-认识生成器函数
+- 参考文章 [什么是 generator 生成器？](https://github.com/946629031/Node.js-Koa2-the-movie-trailer-site/#2-1-generator-%E7%94%9F%E6%88%90%E5%99%A8%E5%87%BD%E6%95%B0-iterator%E8%BF%AD%E4%BB%A3%E5%99%A8)
 
 - generator 生成器函数
     - 普通函数，一路到底
