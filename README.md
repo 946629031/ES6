@@ -456,8 +456,10 @@ console.log({ a, b, show(){ console.log('a') }})
 ```
 
 ## 12.Promise
-- [Promise 对象 - 【阮一峰】](https://javascript.ruanyifeng.com/advanced/promise.html)
-- 参考文章 [《Promises 是什么？ - Node.js Koa2框架搭建电影预告片网站》](https://github.com/946629031/Node.js-Koa2-the-movie-trailer-site/#1-3-%E6%AF%AB%E4%B8%8D%E7%8A%B9%E8%B1%AB%E7%9A%84%E4%BD%BF%E7%94%A8promise)
+- 参考文章
+    - [Promise 对象 - 【阮一峰】](https://javascript.ruanyifeng.com/advanced/promise.html)
+    - [Promise中的then第二个参数和catch有什么区别？](https://zhuanlan.zhihu.com/p/94805682)
+    - [《Promises 是什么？ - Node.js Koa2框架搭建电影预告片网站》](https://github.com/946629031/Node.js-Koa2-the-movie-trailer-site/#1-3-%E6%AF%AB%E4%B8%8D%E7%8A%B9%E8%B1%AB%E7%9A%84%E4%BD%BF%E7%94%A8promise)
 
 - 异步和同步
     - 异步，操作之间没有关系，同时执行多个操作， 代码复杂
