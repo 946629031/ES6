@@ -450,6 +450,7 @@ console.log({ a, b, show(){ console.log('a') }})
 ```
 
 ## 12.Promise
+- [Promise 对象 - 【阮一峰】](https://javascript.ruanyifeng.com/advanced/promise.html)
 
 - 异步和同步
     - 异步，操作之间没有关系，同时执行多个操作， 代码复杂

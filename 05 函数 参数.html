@@ -9,7 +9,7 @@
 <body>
 
     <script>
-        
+        // 收集参数
         var arr = [1,2,3];
 
         show(...arr);
@@ -20,17 +20,22 @@
         //     alert(c)
         // }
     
-    var show=(a,b,c)=>{
-        alert(a)
-        alert(b)
-        alert(c)
-    }
+        var show=(a,b,c)=>{
+            alert(a)
+            alert(b)
+            alert(c)
+        }
     
     
     
     
-    
-    
+        // 函数默认参数
+        function xxx(x, xx=1, xxx){
+            console.log(x);
+            console.log(xx);
+            console.log(xxx);
+        }
+        xxx()
     
     
     
