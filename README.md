@@ -720,7 +720,7 @@ Promise.race([
 ```
 
 
-## 13.generator-认识生成器函数
+## 13.generator-认识生成器函数, *星号函数
 - 参考文章 [《什么是 generator 生成器？ - Node.js Koa2框架搭建电影预告片网站》](https://github.com/946629031/Node.js-Koa2-the-movie-trailer-site/#2-1-generator-%E7%94%9F%E6%88%90%E5%99%A8%E5%87%BD%E6%95%B0-iterator%E8%BF%AD%E4%BB%A3%E5%99%A8)
 
 - generator 生成器函数
