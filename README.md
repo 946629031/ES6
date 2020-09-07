@@ -457,6 +457,7 @@ console.log({ a, b, show(){ console.log('a') }})
 
 ## 12.Promise
 - 参考文章
+    - [面试官：“你能手写一个 Promise 吗”](https://zhuanlan.zhihu.com/p/183801144)
     - [Promise 对象 - 【阮一峰】](https://javascript.ruanyifeng.com/advanced/promise.html)
     - [Promise中的then第二个参数和catch有什么区别？](https://zhuanlan.zhihu.com/p/94805682)
         - 因此，建议总是使用catch方法，而不使用then方法的第二个参数。
