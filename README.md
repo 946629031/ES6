@@ -278,6 +278,9 @@ console.log(result)
 var arr = [12, 4, 8, 9]
 var result = arr.forEach(item => console.log(item))
 var result = arr.forEach((item, index)=>console.log(item, index))
+
+console.log(result)  // undefined
+// forEach 没有返回值，
 ```
 
 ## 8.字符串
